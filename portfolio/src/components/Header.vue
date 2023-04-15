@@ -34,14 +34,15 @@
     }
     #buttons{
         display: flex;
-        margin-right: 4vw;
-        list-style: none;
+        margin: auto;
+        list-style: none; 
         height: 100%;
     }
     .li{
         height: 100%;
         width: 27%;
     }
+
     .button{
         height: 100%;
     }
@@ -49,5 +50,6 @@
         font-family: "Roboto Condensed";
         margin-left: 4%;
         color: whitesmoke;
+        white-space: nowrap;
     }
 </style>
