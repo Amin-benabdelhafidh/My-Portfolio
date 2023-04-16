@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Amin Benabdelhafidh</h1>
         <ul id="buttons">
             <li class="li"><LinkButton link="/" text="Home" class="button"/></li>
             <li class="li"><LinkButton link="/projects" text="Projects" class="button"/></li>
@@ -26,7 +26,8 @@
         height: 15vh;
         width: 100%;
         min-height: 50px;
-        min-width: 400px;
+        margin:0;
+        padding: 0;
         justify-content: space-between;
         align-items: center;
         align-content: center;
@@ -34,15 +35,25 @@
     }
     #buttons{
         display: flex;
-        margin: auto;
+        margin: 0;
         list-style: none; 
+        margin-bottom: 0;
         height: 100%;
+
     }
     .li{
         height: 100%;
         width: 27%;
     }
 
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 20px;
+        }
+        .buttons{
+            font-size: 15px;
+        }
+    }
     .button{
         height: 100%;
     }
