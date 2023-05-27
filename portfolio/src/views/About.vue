@@ -1,7 +1,11 @@
 <template>
-    <h1>My Portfolio</h1>
-    <h3>Version: <span>1.0.0</span></h3>
-    <h6>Developed by&ensp;<a href="https://github.com/Amin-benabdelhafidh">Amin Ben Abdelhafidh</a></h6>
+    <div id="container"> 
+        <div id="child-container">
+            <h1>My Portfolio</h1>
+            <h3>Version: <span>1.0.0</span></h3>
+            <h6>Developed by&ensp;<a href="https://github.com/Amin-benabdelhafidh">Amin Ben Abdelhafidh</a></h6>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -13,6 +17,7 @@
 <style scoped>
     h1 ,h3, h6{
         font-family: "Roboto Condensed";
+        text-align: center;
     }
     h1{
         font-size: 50px;
@@ -36,4 +41,13 @@
         color: rgb(61, 158, 223);
         font-size: 16px;
     }
+    #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    template{
+        margin-bottom: 2px;
+    }
+
 </style>

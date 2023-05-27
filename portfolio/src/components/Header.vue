@@ -1,12 +1,15 @@
 <template>
     <header>
         <h1>Amin Benabdelhafidh</h1>
-        <ul id="buttons">
-            <li class="li"><LinkButton link="/" text="Home" class="button"/></li>
-            <li class="li"><LinkButton link="/projects" text="Projects" class="button"/></li>
-            <li class="li"><LinkButton link="/about" text="About" class="button"/></li>
+        <ul>
+            <li><LinkButton link="/" text="Home" class="button nav-link"/></li>
+        
+            <li><LinkButton link="/projects" text="Projects" class="button nav-link"/></li>          
+        
+            <li><LinkButton link="/about" text="About" class="button nav-link"/></li>          
         </ul>
-    </header>
+    </header>      
+
 </template>
 
 <script>
@@ -24,43 +27,40 @@
     header{
         display: flex;
         height: 15vh;
-        width: 100%;
-        min-height: 50px;
+        max-width: 100%;
         margin:0;
         padding: 0;
-        justify-content: space-between;
         align-items: center;
         align-content: center;
         background-color: rgb(14, 111, 175);
     }
-    #buttons{
+    ul{
         display: flex;
         margin: 0;
         list-style: none; 
-        margin-bottom: 0;
+        width: auto;
         height: 100%;
 
     }
     .li{
-        height: 100%;
-        width: 27%;
-    }
-
-    @media screen and (max-width: 600px) {
-        h1 {
-            font-size: 20px;
-        }
-        .buttons{
-            font-size: 15px;
-        }
-    }
-    .button{
         height: 100%;
     }
     h1{
         font-family: "Roboto Condensed";
         margin-left: 4%;
         color: whitesmoke;
-        white-space: nowrap;
+        white-space: wrap;
+        font-size: 30px;
     }
+    @media screen and (max-width: 520px) {
+        
+    }
+    @media screen and (max-width: 800px) {
+        h1{
+            font-size: 25px;
+        }
+
+    }
+    
+    
 </style>

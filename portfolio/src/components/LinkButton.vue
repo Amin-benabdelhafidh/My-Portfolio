@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="link" id="link"><p>{{ text }}</p></router-link>
+    <router-link :to="link" id="link" class="nav-link"><p>{{ text }}</p></router-link>
     
 </template>
 
@@ -32,5 +32,11 @@
         font-family: "Roboto Condensed";
         font-size: 17px;
         margin: auto 20px;
+    }
+    @media screen and (max-width: 520px) {
+        p{
+            font-size: 14px;
+            margin: auto 12px;
+        }
     }
 </style>

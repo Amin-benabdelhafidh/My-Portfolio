@@ -14,8 +14,8 @@
     footer{
         height: auto;
         position: fixed;
-        left: 0;
         bottom: 0;
+        margin-bottom: 0px;
         width: 100%;
         background-color: rgba(207, 207, 207, 0.616);
         text-align: center;

@@ -4,7 +4,7 @@
       <div class="typed-out">Hello, World!</div>
     </div>
     <h2>I'm <a href="https://github.com/Amin-benabdelhafidh">Amin Benabdelhafidh</a> and this is my portfolio website.</h2>
-  </div>
+  </div> 
 
 </template>
 
@@ -23,14 +23,19 @@
   .container{
       display: inline-block;
       width: auto;
-      margin-bottom: 5vh;
+      margin: 5px;
+      margin-bottom: 5vh !important;
       
     }
     .page{
-      margin: 1vh auto auto 5vw;
+      width: 100%;
       font-family: monospace;
     }
+    h2{
+      margin: 5px;
+    }
     .typed-out{
+      
       overflow: hidden;
       font-size: 40px;
       border-right: .15em solid rgb(61, 158, 223);

@@ -1,6 +1,8 @@
 <template>
   <Header />
-  <router-view></router-view>
+  <div id="content-container">
+    <router-view></router-view>
+  </div>
   <Footer />
 </template>
 
@@ -25,5 +27,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin: 0px;
+}
+#content-container{
+  margin-bottom: 12vh;
 }
 </style>
