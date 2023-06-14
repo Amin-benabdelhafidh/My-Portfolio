@@ -1,2 +1,2 @@
 # My-Portfolio
-The front-end of the 'My Portfolio' project.
+The front-end and the back-end of the 'My Portfolio' project.
